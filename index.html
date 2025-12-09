@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wenex - 여행의 모든 순간을 기록하다</title>
+    <meta name="description" content="사진 한 장으로 완성되는 나만의 여행 지도, Wenex. 지역 인증부터 실시간 쿠폰까지, 여행의 새로운 경험을 만나보세요.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Background Elements -->
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="assets/wenex_logo.png" alt="Wenex Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#features">주요 기능</a></li>
+                    <li><a href="#download">다운로드</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">New Travel Experience</span>
+                <h1>여행의 순간이<br>지도가 되다, <span class="text-gradient">Wenex</span></h1>
+                <p>사진 한 장으로 지역을 인증하고, 나만의 디지털 지도를 완성하세요.<br>여행지에서의 특별한 혜택이 당신을 기다립니다.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary"><i class="fab fa-apple"></i> App Store</a>
+                    <a href="#" class="btn btn-secondary"><i class="fab fa-google-play"></i> Google Play</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup floating">
+                    <div class="notch"></div>
+                    <div class="screen hero-screen-content">
+                        <!-- Dynamic Hero Visual -->
+                        <div class="map-bg"></div>
+                        <div class="hero-marker p1">
+                            <div class="marker-photo"></div>
+                            <div class="marker-pin"></div>
+                        </div>
+                        <div class="hero-marker p2">
+                            <div class="marker-photo"></div>
+                            <div class="marker-pin"></div>
+                        </div>
+                        <div class="hero-marker p3">
+                            <div class="marker-photo"></div>
+                            <div class="marker-pin"></div>
+                        </div>
+                        <div class="connection-line">
+                            <svg width="100%" height="100%">
+                                <path class="path-line" d="M80,150 Q150,250 220,180 T200,400" fill="none"
+                                    stroke="#2F80ED" stroke-width="3" stroke-dasharray="10,5" />
+                            </svg>
+                        </div>
+                        <div class="floating-card">
+                            <i class="fas fa-camera"></i>
+                            <span>Recording...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>여행의 새로운 기준, Wenex</h2>
+                <p>단순한 기록을 넘어, 여행의 가치를 발견하세요.</p>
+            </div>
+
+            <!-- Feature 1: Photo Auth -->
+            <div class="feature-row">
+                <div class="feature-text">
+                    <div class="icon-box blue">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>찍는 순간 인증 완료,<br>사진 기반 지역 인증</h3>
+                    <p>여행지에서의 소중한 순간을 사진으로 남기세요.<br>Wenex의 AI 기술이 위치를 자동으로 인식하여<br>별도의 절차 없이 간편하게 인증해드립니다.</p>
+                </div>
+                <div class="feature-visual">
+                    <div class="phone-frame small glass-effect">
+                        <div class="screen-content camera-ui">
+                            <div class="viewfinder"></div>
+                            <div class="shutter-btn"></div>
+                            <div class="auth-popup">
+                                <i class="fas fa-check-circle"></i>
+                                <span>위치 인증 성공!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 2: Digital Map -->
+            <div class="feature-row reverse">
+                <div class="feature-text">
+                    <div class="icon-box purple">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>나만의 여행 지도,<br>디지털 커뮤니티 맵</h3>
+                    <p>내가 다녀온 곳들이 지도 위에 예쁘게 기록됩니다.<br>다른 여행자들의 숨은 명소를 발견하고<br>나만의 특별한 여행 코스를 공유해보세요.</p>
+                </div>
+                <div class="feature-visual">
+                    <div class="phone-frame small glass-effect">
+                        <div class="screen-content map-ui">
+                            <div class="map-grid"></div>
+                            <div class="map-marker m1"><img src="assets/wenex_logo.png" class="marker-img"></div>
+                            <div class="map-marker m2"><img src="assets/wenex_logo.png" class="marker-img"></div>
+                            <div class="map-marker m3"><img src="assets/wenex_logo.png" class="marker-img"></div>
+                            <div class="user-loc"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3: Real-time Coupons -->
+            <div class="feature-row">
+                <div class="feature-text">
+                    <div class="icon-box yellow">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <h3>여행이 혜택이 되는 순간,<br>실시간 쿠폰 발행</h3>
+                    <p>인증된 장소 주변의 맛집, 카페, 상점에서<br>바로 사용할 수 있는 쿠폰이 쏟아집니다.<br>Wenex와 함께라면 여행이 더 풍성해집니다.</p>
+                </div>
+                <div class="feature-visual">
+                    <div class="phone-frame small glass-effect">
+                        <div class="screen-content coupon-ui">
+                            <div class="coupon-card c1">
+                                <div class="coupon-left">50% OFF</div>
+                                <div class="coupon-right">CAFE</div>
+                            </div>
+                            <div class="coupon-card c2">
+                                <div class="coupon-left">FREE</div>
+                                <div class="coupon-right">DRINK</div>
+                            </div>
+                            <div class="coupon-card c3">
+                                <div class="coupon-left">10% OFF</div>
+                                <div class="coupon-right">SHOP</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-box glass">
+                <div class="download-content">
+                    <h2>지금 바로 Wenex를 시작하세요</h2>
+                    <p>당신의 여행이 더욱 가치있어지는 순간,<br>Wenex가 함께합니다.</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary">앱 다운로드 받기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img src="assets/wenex_logo.png" alt="Wenex Logo"
+                    style="height: 30px; filter: grayscale(100%) opacity(0.7);">
+            </div>
+            <div class="footer-links">
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">고객센터</a>
+            </div>
+            <p class="copyright">&copy; 2025 Wenex. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
